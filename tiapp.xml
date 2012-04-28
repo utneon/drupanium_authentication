@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ti:app xmlns:ti="http://ti.appcelerator.org">
+    <property name="acs-oauth-secret-production" type="string">pUgHFz6Fa7B5lOFG9q8w2FJcpM1rBnF1</property>
+    <property name="acs-oauth-key-production" type="string">rcv8MbG8WxbH5GuYcI8AJ78wYECskIAI</property>
+    <property name="acs-api-key-production" type="string">NVNvPaQ90MQ69HkTAsl7RYRt5LgmDX2I</property>
+    <property name="acs-oauth-secret-development" type="string">qNUwdvG51SCFfaoMwyviK3M1icHjozZx</property>
+    <property name="acs-oauth-key-development" type="string">Czswg8klMQ7bAYPnvRJzESZN8i38hzYr</property>
+    <property name="acs-api-key-development" type="string">X3JOV2s2macCRLvDST2NR1WSuwe8qBWN</property>
+    <deployment-targets>
+        <target device="mobileweb">false</target>
+        <target device="iphone">true</target>
+        <target device="ipad">false</target>
+        <target device="android">false</target>
+        <target device="blackberry">false</target>
+    </deployment-targets>
+    <sdk-version>2.0.1.GA2</sdk-version>
+    <id>com.drupanium.auth</id>
+    <name>drupanium_authentication</name>
+    <version>1.0</version>
+    <publisher>paulocarvalho</publisher>
+    <url>http://drupanium.org</url>
+    <description>not specified</description>
+    <copyright>2012 by paulocarvalho</copyright>
+    <icon>appicon.png</icon>
+    <persistent-wifi>false</persistent-wifi>
+    <prerendered-icon>false</prerendered-icon>
+    <statusbar-style>default</statusbar-style>
+    <statusbar-hidden>false</statusbar-hidden>
+    <fullscreen>false</fullscreen>
+    <navbar-hidden>false</navbar-hidden>
+    <analytics>true</analytics>
+    <guid>e52ebf1b-65a6-4068-85bf-1aabc5c1cd44</guid>
+    <property name="ti.ui.defaultunit">system</property>
+    <iphone>
+        <orientations device="iphone">
+            <orientation>Ti.UI.PORTRAIT</orientation>
+        </orientations>
+        <orientations device="ipad">
+            <orientation>Ti.UI.PORTRAIT</orientation>
+            <orientation>Ti.UI.UPSIDE_PORTRAIT</orientation>
+            <orientation>Ti.UI.LANDSCAPE_LEFT</orientation>
+            <orientation>Ti.UI.LANDSCAPE_RIGHT</orientation>
+        </orientations>
+    </iphone>
+    <android xmlns:android="http://schemas.android.com/apk/res/android"/>
+    <mobileweb>
+        <precache/>
+        <splash>
+            <enabled>true</enabled>
+            <inline-css-images>true</inline-css-images>
+        </splash>
+        <theme>default</theme>
+    </mobileweb>
+    <modules>
+        <module platform="commonjs" version="2.0.1">ti.cloud</module>
+    </modules>
+</ti:app>
