@@ -1,8 +1,10 @@
 Titanium Mobile Project
 http://www.appcelerator.com/platform/titanium-sdk
 
-Project name: drupanium_authentication
+PROJECT NAME: drupanium_authentication
 "drupanium_authentication" is a titanium mobile application which includes drupanium framework to connect with drupal services.
+
+VERSION: 0.X DEV
 
 This example application was created to help developing and testing drupanium framework for the following components:
 drupanium_application.js
@@ -22,12 +24,17 @@ drupanium_user:
 
 CONTRIBUTORS
 
-    Paulo Carvalho
-    Luis Elizondo
+    Paulo Carvalho (http://www.linkedin.com/in/utneon)
+    Luis Elizondo (http://about.me/luiselizondo)
+    
+
+Drupanium on GitHub: https://github.com/drupanium
+Drupanium on Twitter: @Drupanium
+
+More information: http://drupanium.org
+
 
 
 Please read the License
 
 Drupal, Appcelerator and Titanium Studio are registered trademarks
-
-More information: http://drupanium.org
