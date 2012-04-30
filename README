@@ -1,14 +1,12 @@
-Welcome to your Appcelerator Titanium Mobile Project
+"drupanium_authentication" is a Titanium Mobile Project used for the purpose of developing and testing the Drupanium framework. This is a work in progress. If you wish to use the full drupanium_app currently available, please visit the drupanium github account or drupanium.org.
 
-This is a single window application with a single view - a mostly blank canvas. Requires Titanium Mobile SDK 1.8.0+
+CONTRIBUTORS
 
-----------------------------------
-Stuff our legal folk make us say:
+    Paulo Carvalho
+    Luis Elizondo
 
-Appcelerator, Appcelerator Titanium and associated marks and logos are 
-trademarks of Appcelerator, Inc. 
+Please read the License
 
-Titanium is Copyright (c) 2009-2012 by Appcelerator, Inc. All Rights Reserved.
+Drupal, Appcelerator and Titanium Studio are registered trademarks
 
-Titanium is licensed under the Apache Public License (Version 2). Please
-see the LICENSE file for the full license.
+http://drupanium.org
