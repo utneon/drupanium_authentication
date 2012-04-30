@@ -231,11 +231,17 @@ function FirstView() {
 		// see the documentation on drupanium_auth.js for params and more information on this method
 		DrupaniumUser.drupaniumGetUser(DrupaniumAuthentication.getDrupaniumSessionInformation("userUid"), DrupaniumApp.getDrupaniumURLS('rest_path') ,DrupaniumApp.getDrupaniumURLS('site_path') ,5000 , function(data){
 			if (data) {
-				Titanium.API.log("success");
 				
+				// Use these data fields if you're using custom fields for profile. These are the fields which are defined in the api.drupanium.org
+				//alert(data.field_fullname.und[0].value);
+				//alert(data.field_country.und[0].value);
+				//alert(data.field_aboutme.und[0].value);
+				
+				DrupaniumUser.setDrupaniumUSER('userName', data.name);
 				DrupaniumUser.setDrupaniumUSER('userProfilePicture', data.picture.filename);
 				
-				Titanium.API.info(DrupaniumUser.getDrupaniumUSER('userProfilePicture'));
+				Titanium.API.info("Drupal username: " + DrupaniumUser.getDrupaniumUSER('userName'));
+				Titanium.API.info("Drupal profile picture filename: " + DrupaniumUser.getDrupaniumUSER('userProfilePicture'));
 				
 					// New variable to show the user picture
 	// We create an ImageView to hold the image
