@@ -208,11 +208,10 @@ function FirstView() {
 	
 	
 	
-	/*In development*/
 	/**
-	 * User Picture Test
+	 * Drupanium
+	 * Use drupanium_user.js component to create an object for your user related actions
 	 */
-	
 	var DrupaniumUser = require('/drupanium_framework/drupanium_user');
 	
 	var showUserProfile = Titanium.UI.createButton({
