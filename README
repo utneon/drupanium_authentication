@@ -1,27 +1,33 @@
-"drupanium_authentication" is a Titanium Mobile Project used for the purpose of developing and testing the Drupanium framework. This is a work in progress. If you wish to use the full drupanium_app currently available, please visit the drupanium github account or drupanium.org.
+Titanium Mobile Project
+http://www.appcelerator.com/platform/titanium-sdk
 
-The purpose of this implementation example is to work on the following specific features:
+Project name: drupanium_authentication
+"drupanium_authentication" is a titanium mobile application which includes drupanium framework to connect with drupal services.
 
-drupanium_application
-drupanium_auth
-drupanium_user
+This example application was created to help developing and testing drupanium framework for the following components:
+drupanium_application.js
+drupanium_auth.js
+drupanium_user.js
 
 drupanium_application:
-- application configuration for drupal configuration
+- application configuration
 
 drupanium_auth:
-- session authentication/login/logout functionality
+- session authentication (login and logout user)
 
 drupanium_user:
-- user related functionality (user info, register, update)
+- user actions (get info, update, register/create account, recover password)
+
+
 
 CONTRIBUTORS
 
     Paulo Carvalho
     Luis Elizondo
 
+
 Please read the License
 
 Drupal, Appcelerator and Titanium Studio are registered trademarks
 
-http://drupanium.org
+More information: http://drupanium.org
