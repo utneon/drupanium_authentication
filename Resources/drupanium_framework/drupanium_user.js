@@ -46,6 +46,20 @@ exports.getDrupaniumUSER = function(option) {
 };
 
 
+/**
+ * drupaniumGetUser: Method for retrieving user information.
+ * 
+ * @param uid
+ * the uid of the user to get information
+ * @param rest_path
+ * path to the rest api on drupal site
+ * @param site_path
+ * full base path for the drupal installation. don't forget 'http://'
+ * @param timeout
+ * value of the timeout rule for the connection attent in milliseconds
+ * @param onSuccess 
+ * callback function to execute when we get a response
+ */
 exports.drupaniumGetUser = function (uid, rest_path, site_path, timeout, onSuccess) {
 	
 	Ti.API.info("drupanium_user: drupaniumGetUser function was called...");
