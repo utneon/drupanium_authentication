@@ -1,5 +1,20 @@
 "drupanium_authentication" is a Titanium Mobile Project used for the purpose of developing and testing the Drupanium framework. This is a work in progress. If you wish to use the full drupanium_app currently available, please visit the drupanium github account or drupanium.org.
 
+The purpose of this implementation example is to work on the following specific features:
+
+drupanium_application
+drupanium_auth
+drupanium_user
+
+drupanium_application:
+- application configuration for drupal configuration
+
+drupanium_auth:
+- session authentication/login/logout functionality
+
+drupanium_user:
+- user related functionality (user info, register, update)
+
 CONTRIBUTORS
 
     Paulo Carvalho
