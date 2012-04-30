@@ -215,17 +215,17 @@ function FirstView() {
 	
 	var DrupaniumUser = require('/drupanium_framework/drupanium_user');
 	
-	var showImageButton = Titanium.UI.createButton({
-		title:'Show User Picture',
+	var showUserProfile = Titanium.UI.createButton({
+		title:'Show User Info',
 		height:40,
 		width:200,
 		bottom:35,
 	});
 	
-	self.add(showImageButton);
+	self.add(showUserProfile);
 	
 	
-	showImageButton.addEventListener('click', function(e) {
+	showUserProfile.addEventListener('click', function(e) {
 		
 		// Call the drupaniumUser method to get the User Info
 		// see the documentation on drupanium_auth.js for params and more information on this method
@@ -243,8 +243,7 @@ function FirstView() {
 				Titanium.API.info("Drupal username: " + DrupaniumUser.getDrupaniumUSER('userName'));
 				Titanium.API.info("Drupal profile picture filename: " + DrupaniumUser.getDrupaniumUSER('userProfilePicture'));
 				
-					// New variable to show the user picture
-	// We create an ImageView to hold the image
+	// We create an ImageView to hold the image from the user Profile
 	var userPicture = Ti.UI.createImageView({
 		// We use the property image and the SITE_PATH instead of the REST_PATH
 		// also notice how data.picture.filename is build, since data.picture is also
@@ -256,6 +255,18 @@ function FirstView() {
 	});
 	
 	self.add(userPicture);
+	
+	// We create a label to hold the username from the user Object.
+	var userNameLabel = Ti.UI.createLabel({
+		color:'#000000',
+		text: 'userName: ' + DrupaniumUser.getDrupaniumUSER('userName'),
+		height:'auto',
+		width:'auto',
+		bottom: 210
+	});
+	
+	self.add(userNameLabel);
+	
 			}
 			else {
 				//Titanium.API.log("failure");
