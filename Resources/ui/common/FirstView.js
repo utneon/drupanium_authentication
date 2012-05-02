@@ -205,9 +205,6 @@ function FirstView() {
 	}
 	
 	
-	
-	
-	
 	/**
 	 * Drupanium
 	 * Use drupanium_user.js component to create an object for your user related actions
@@ -222,7 +219,6 @@ function FirstView() {
 	});
 	
 	self.add(showUserProfile);
-	
 	
 	showUserProfile.addEventListener('click', function(e) {
 		
